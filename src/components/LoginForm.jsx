@@ -61,7 +61,9 @@ export const LoginForm = () => {
         }
       );
       console.log('Logged In! ================> ', currentUser);
-      setPageLoading(false);
+      setTimeout(() => {
+        setPageLoading(false);
+      }, 1500);
     } catch (err) {
       console.log('Error Loging in useer ==================>', err);
     }

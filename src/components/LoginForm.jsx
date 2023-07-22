@@ -10,6 +10,7 @@ export const LoginForm = () => {
   const [email, setEmail] = useState('');
   const [currentUser, setCurrentUser] = useState();
   const [password, setPassword] = useState('');
+  const [pageLoading, setPageLoading] = useState(false);
   const [supportTickets, setSupportTickets] = useState([
     {
       email: '',
@@ -51,6 +52,7 @@ export const LoginForm = () => {
   // };
 
   const _loginIn = async () => {
+    setPageLoading(true);
     try {
       signInWithEmailAndPassword(auth, email, password).then(
         (userCredential) => {
@@ -59,6 +61,7 @@ export const LoginForm = () => {
         }
       );
       console.log('Logged In! ================> ', currentUser);
+      setPageLoading(false);
     } catch (err) {
       console.log('Error Loging in useer ==================>', err);
     }
@@ -95,6 +98,22 @@ export const LoginForm = () => {
               {/* <button onClick={() => _signUp()}>New user? Sign up now!</button> */}
             </div>
           </div>
+          <p
+            style={
+              pageLoading
+                ? {
+                    fontSize: 18,
+                    fontWeight: 'bolder',
+                  }
+                : {
+                    color: 'transparent',
+                    userSelect: 'none',
+                    fontSize: 18,
+                  }
+            }
+          >
+            Loading...
+          </p>
         </div>
       )}
       {currentUser && (

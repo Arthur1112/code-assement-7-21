@@ -1,0 +1,27 @@
+.navCantainer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navButton {
+  border: none;
+  /* font-size: 1em; */
+  padding: 1em 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+  margin: 0.5em;
+  font-weight: bolder;
+  background: rgba(255, 255, 255, 0.19);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.9px);
+  -webkit-backdrop-filter: blur(6.9px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+.navButton:hover {
+  background-color: rgb(214, 185, 214);
+  scale: 1.05;
+  color: #000000;
+}

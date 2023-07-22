@@ -1,0 +1,370 @@
+.adminContainer {
+  padding: 24px 24px 24px 0px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 80vh;
+  background: rgba(255, 255, 255, 0.19);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.9px);
+  -webkit-backdrop-filter: blur(6.9px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.bottomRowStatusAdminWrapper {
+  width: 100%;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.ticketListContaienr {
+  overflow: scroll;
+  height: 95%;
+  width: 40%;
+  padding: 0px 24px;
+  border-right: solid rgba(0, 0, 0, 0.36);
+}
+.selectedTicketContaienr {
+  height: 100%;
+  width: 100%;
+  padding: 0px 0px 0px 24px;
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ticketPill {
+  cursor: pointer;
+  padding: 0px 10px 0px 10px;
+  color: rgb(43, 43, 43);
+  border-radius: 10px;
+  margin: 15px 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.19);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.9px);
+  -webkit-backdrop-filter: blur(6.9px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+.ticketPill:hover {
+  scale: 1.02;
+}
+
+.statusIndicator {
+  border-radius: 10px;
+  width: 6px;
+  height: 6px;
+  margin-right: 5px;
+}
+.statusIndicatorWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.selectedUserInfoWrapper {
+  padding: 20px;
+  height: 50%;
+  overflow: scroll;
+  scrollbar-width: 1px;
+  color: rgb(43, 43, 43);
+  border-radius: 10px;
+  flex-direction: column;
+  display: flex;
+  background: rgba(255, 255, 255, 0.19);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.9px);
+  -webkit-backdrop-filter: blur(6.9px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+.adminWorkWrapper {
+  padding: 20px;
+  height: 50%;
+  border-radius: 10px;
+  flex-direction: column;
+  gap: 20px;
+  display: flex;
+  color: rgb(43, 43, 43);
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.19);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.9px);
+  -webkit-backdrop-filter: blur(6.9px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.statusAdminWrapper {
+  justify-self: flex-start;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.topRowSstatusAdminWrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.confirmationMessageWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+:root {
+  --small: 40em;
+}
+
+.statusAdminText {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.button-wrap {
+  text-align: center;
+}
+@media (max-width: 40em) {
+  .button-wrap {
+    margin-top: -1.5em;
+  }
+}
+
+.button-label {
+  border: none;
+  font-size: 1em;
+  display: inline-block;
+  padding: 0em 1em;
+  margin: 0.4em;
+  cursor: pointer;
+  color: #292929;
+  border-radius: 5px;
+  transition: 0.3s;
+  font-weight: bolder;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  background: rgba(255, 255, 255, 0.19);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.9px);
+  -webkit-backdrop-filter: blur(6.9px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.ticketSubmitBtn {
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+  font-weight: bolder;
+  color: rgb(43, 43, 43);
+  background: rgba(255, 255, 255, 0.19);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.9px);
+  -webkit-backdrop-filter: blur(6.9px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+.ticketSubmitBtn:hover {
+  background-color: rgb(231, 255, 230);
+  scale: 1.05;
+  color: #000000;
+}
+
+.signoutBtn {
+  padding: 1em 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+  margin: 0.5em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: 0.3s;
+  font-weight: bolder;
+  color: white;
+  background: rgba(255, 255, 255, 0.19);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.9px);
+  -webkit-backdrop-filter: blur(6.9px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.Admintextarea {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  border: 1px solid rgb(43, 43, 43);
+  background: transparent;
+}
+.Admintextarea::placeholder {
+  font-family: 'Lato', sans-serif;
+  padding: 0px 6px;
+  opacity: 1;
+  color: rgb(135, 135, 135);
+}
+
+.button-label h1 {
+  font-size: 0.8em;
+  font-family: 'Lato', sans-serif;
+}
+.button-label h1:active {
+  transform: translateY(2px);
+}
+/* @media (max-width: 40em) {
+  .button-label {
+    padding: 0em 1em 3px;
+    margin: 0.25em;
+  }
+} */
+#new-button:checked + .button-label {
+  background: #2ecc71;
+  color: #efefef;
+}
+#new-button:checked + .button-label:hover {
+  background: #2ecc71;
+  color: #efefef;
+}
+
+#inProgress-button:checked + .button-label {
+  background-color: #f7c552;
+  color: #292929;
+}
+#inProgress-button:checked + .button-label:hover {
+  background-color: #f7c552;
+  color: #292929;
+}
+
+#resolved-button:checked + .button-label {
+  background-color: #4183d7;
+  color: #efefef;
+}
+#resolved-button:checked + .button-label:hover {
+  background: #4183d7;
+  color: #efefef;
+}
+.button-label:hover {
+  scale: 1.05;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 840px) {
+  .adminContainer {
+    padding: 16px 16px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 95vw;
+    gap: 10px;
+  }
+  .ticketListContaienr {
+    overflow: scroll;
+    padding: 0px;
+    height: 25%;
+    width: 100%;
+    border-right: none;
+  }
+  .selectedTicketContaienr {
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .selectedUserInfoWrapper {
+    padding: 10px;
+    font-size: 0.5em;
+    height: 20%;
+  }
+  .adminWorkWrapper {
+    padding: 10px;
+    height: 75%;
+    gap: 10px;
+    justify-content: space-between;
+    gap: 10px;
+    display: flex;
+  }
+  .topRowSstatusAdminWrapper {
+    margin-bottom: 5px;
+    width: 100%;
+    height: 2ch;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .statusAdminWrapper {
+    justify-self: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 25px;
+    flex-wrap: nowrap;
+    display: flex;
+  }
+  .button-label h1 {
+    font-size: 0.5em;
+    font-family: 'Lato', sans-serif;
+  }
+  .statusAdminText {
+    font-size: 0.8em;
+    font-weight: bold;
+  }
+  .statusInnerWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .confirmationMessageWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .confirmationMessageWrapper h4 {
+    display: block;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
+
+  .ticketPill {
+    cursor: pointer;
+    padding: 0px 5px 0px 5px;
+    color: rgb(43, 43, 43);
+    margin: 5px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: none;
+    font-size: 0.5em;
+  }
+  .Admintextarea {
+    height: 60%;
+  }
+  .bottomRowStatusAdminWrapper {
+    width: 100%;
+    height: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}

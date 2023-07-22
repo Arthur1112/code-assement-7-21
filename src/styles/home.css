@@ -1,0 +1,97 @@
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 90vh;
+}
+
+.ticketForm-box {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 48px;
+  margin: 0px 20px;
+  max-width: 400px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.19);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.9px);
+  -webkit-backdrop-filter: blur(6.9px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.userMessageWrapper {
+  text-align: center;
+}
+
+.ticketForm-box h2 {
+  margin: 0 0 10px;
+  color: #ffffff;
+}
+
+.ticketForm-box .user-box {
+  position: relative;
+}
+
+.ticketForm-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid;
+  outline: none;
+  background: transparent;
+  font-family: 'Lato', sans-serif;
+}
+.ticketForm-box .user-box textarea {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid;
+  outline: none;
+  background: transparent;
+}
+.ticketForm-box .user-box textarea::placeholder {
+  color: white;
+  opacity: 1;
+  font-family: 'Lato', sans-serif;
+}
+.ticketForm-box .user-box input::placeholder {
+  color: white;
+  opacity: 1;
+}
+.submitBtnWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submitTicketBtn {
+  border: none;
+  padding: 0em 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+  font-weight: bolder;
+  color: white;
+  background: rgba(255, 255, 255, 0.19);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.9px);
+  -webkit-backdrop-filter: blur(6.9px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+.submitTicketBtn:hover {
+  background-color: rgb(231, 255, 230);
+  scale: 1.05;
+  color: #000000;
+}

@@ -1,0 +1,85 @@
+.mainFormContainer {
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login-box {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 68px;
+  margin: 0px 20px;
+  max-width: 400px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.19);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.9px);
+  -webkit-backdrop-filter: blur(6.9px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.login-box h2 {
+  margin: 0 0 10px;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .user-box textarea::placeholder {
+  color: rgb(0, 0, 0);
+  color: white;
+  opacity: 1;
+}
+.login-box .user-box input::placeholder {
+  color: rgb(0, 0, 0);
+  color: white;
+  opacity: 1;
+}
+
+.LoginBtnWrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.LoginBtnWrapper button {
+  border: none;
+  padding: 1em 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+  font-weight: bolder;
+  color: white;
+  background: rgba(255, 255, 255, 0.19);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.9px);
+  -webkit-backdrop-filter: blur(6.9px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+.LoginBtnWrapper button:hover {
+  background-color: rgb(231, 255, 230);
+  scale: 1.05;
+  color: #000000;
+}
